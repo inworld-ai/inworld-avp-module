@@ -1,0 +1,1 @@
+Tankard scan from Virtual Museums of Małopolska: https://sketchfab.com/3d-models/tankard-with-a-biblical-scene-d968b14919544a7e81dbe6802049faae

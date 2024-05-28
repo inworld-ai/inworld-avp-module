@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3579427057017258104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4728834701479563083}
+  - component: {fileID: 4290105854624075946}
+  - component: {fileID: 5541905690540661718}
+  - component: {fileID: 629999742184280208}
+  - component: {fileID: 8356416252382587661}
+  m_Layer: 0
+  m_Name: ControllerParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4728834701479563083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579427057017258104}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4290105854624075946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579427057017258104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78696971f17345f8b3a604c50919e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Client: {fileID: 5541905690540661718}
+  m_AudioCapture: {fileID: 8356416252382587661}
+  m_CharacterHandler: {fileID: 629999742184280208}
+  m_GameData: {fileID: 0}
+  m_SceneFullName: workspaces/bfbe29da-33fb-4dc3-ac0f-53cf944f56c6/scenes/gdc_home
+  m_AutoStart: 0
+--- !u!114 &5541905690540661718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579427057017258104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5db5b813fe746f9a9ce5602a5521235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ServerConfig: {fileID: 11400000, guid: 5d4b4994cd4c627409e9c619e5e369e5, type: 2}
+  m_APIKey: tkFziaos3JPMp1Pq3GGtRqJlKLZTBD40
+  m_APISecret: QAhGAyd5RMzq3MzUxCE0DnWJNTy5K4zgMRmVQyROCK3apyK4ypMszwRYF0vtlQaR
+  m_CustomToken: 
+  m_PublicWorkspace: 
+  m_PreviousDialog:
+    phrases: []
+--- !u!114 &629999742184280208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579427057017258104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f92db331c103a4aa88a10e82275245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ManualAudioHandling: 1
+--- !u!114 &8356416252382587661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579427057017258104}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393ccca29f43636448025acee26204bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SamplingMode: 2
+  m_PlayerVolumeThreshold: 2
+  m_BufferSeconds: 1
+  m_DeviceName: 
+  OnRecordingStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRecordingEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerStartSpeaking:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerStopSpeaking:
+    m_PersistentCalls:
+      m_Calls: []

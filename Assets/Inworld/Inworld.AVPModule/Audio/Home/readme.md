@@ -1,0 +1,1 @@
+Welcome chime from SergeQuadrado: https://pixabay.com/sound-effects/announcement-sound-4-21464/

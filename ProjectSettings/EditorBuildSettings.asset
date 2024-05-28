@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Inworld/Inworld.AVPModule/Scenes/0_Start.unity
+    guid: 4ab1483c207a84651963faf27cd32d73
+  - enabled: 1
+    path: Assets/Inworld/Inworld.AVPModule/Scenes/1_Home.unity
+    guid: 885dea1ed1c20498d96287de5c611f97
+  - enabled: 1
+    path: Assets/Inworld/Inworld.AVPModule/Scenes/2_GameShow.unity
+    guid: 16bded368a8d443c1bc5b7fd2169901a
+  - enabled: 1
+    path: Assets/Inworld/Inworld.AVPModule/Scenes/3_Artefact.unity
+    guid: f35a6bc41964e4ef6849368f14e2a39c
+  - enabled: 1
+    path: Assets/Inworld/Inworld.AVPModule/Scenes/4_Fortune.unity
+    guid: 0f768fa5c5b6f4b2a9a98203822d77fa
+  m_configObjects:
+    UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: 791d113edf0cf4760b6b97e368ffedca, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 3b39c6ba7d700421fa8183701e7c6dd5, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6802d338e115a424ab3b297cb3d65168, type: 2}

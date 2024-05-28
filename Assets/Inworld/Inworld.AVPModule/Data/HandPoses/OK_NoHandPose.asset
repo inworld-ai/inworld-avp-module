@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740f51a1ac4b42088297287229057627, type: 3}
+  m_Name: OK_NoHandPose
+  m_EditorClassIdentifier: 
+  m_HandShape: {fileID: 11400000, guid: f3274088cf3974fdb9739575a1d3b0e7, type: 2}
+  m_RelativeOrientation:
+    m_UserConditions: []
+    m_TargetConditions: []

@@ -1,0 +1,142 @@
+goals:
+ # >> ALL BRAINS  
+  # icebreakers
+  - name: "icebreaker"
+    repeatable: true
+    activation:
+      trigger: "icebreaker"
+    actions:
+      - instruction: "{player} is quiet. continue the conversation"
+
+ # >> GAMESHOW
+  - name: "welcome"
+    repeatable: true
+    activation:
+     trigger: "welcome"
+    actions:
+     - instruction: "welcome {player} to the game, ask what {player}'s name is"
+       emotion_change: "JOY"
+     - instruction: "Tell {player} they will be answering trivia questions and ask {player} to press the question button for their first question"
+       emotion_change: "NEUTRAL"
+
+  - name: "ask_question"
+    repeatable: true
+    activation: 
+      trigger: "ask_question"
+    actions:
+      - instruction: "Ask {player} if they are ready for question number {{p.question_number}} on the topic of {{p.category}}"
+      - instruction: "Ask a {{p.category}} quiz question"
+      - instruction: "Tell {player} if they got the answer right or wrong (and tell them the correct answer if they didn't get it right)"
+
+  - name: "followup_question_complete"
+    repeatable: true
+    activation:
+      trigger: "followup_question_complete"
+    actions:
+      - random:
+        - probability: 0.6
+          instruction: "Inquire about {player} to fill air-time and please the viewers at home"
+        - probability: 0.4
+          instruction: "Make game-show host conversation about the {player}'s' last answer"
+      - instruction: "Ask {player} to push the button to {character}'s left to get a new cateogry and question"
+
+  - name: "followup_question_interrupted"
+    repeatable: true
+    activation:
+      trigger: "followup_question_interrupted"
+    actions:
+      - instruction: "Inquire about {player} to fill air-time and please the viewers at home"
+      - instruction: "Ask {player} to push the button to {character}'s left to get a new cateogry and question"
+
+
+  # >> GS Knowledge Handling
+
+  - name: "set_knowledge_art"
+    repeatable: true
+    activation:
+      trigger: "set_knowledge_art"
+    actions:
+      - character_changes:
+          enable_common_knowledge:
+            - "193f71e3-d2f6-4cf8-9c51-50b93957c8d1" #art
+          disable_common_knowledge:
+            - "a0d5a36d-4b60-4dde-9c2d-383c7d7fda27" #entertainment
+            - "4af12475-245d-4fe1-b374-dec1b080b3bd" #geography
+            - "9d3b58ee-0a5f-4264-8546-4c89e0b0f412" #history
+            - "ab3a5d8f-2214-40bc-a7d9-6f59eaf9353c" #nature
+            - "cb2c901d-833e-4ed2-89f3-04ebf3a2f201" #sport
+
+  - name: "set_knowledge_entertainment"
+    repeatable: true
+    activation:
+      trigger: "set_knowledge_entertainment"
+    actions:
+      - character_changes:
+          enable_common_knowledge:
+            - "a0d5a36d-4b60-4dde-9c2d-383c7d7fda27" #entertainment
+          disable_common_knowledge:
+            - "193f71e3-d2f6-4cf8-9c51-50b93957c8d1" #art
+            - "4af12475-245d-4fe1-b374-dec1b080b3bd" #geography
+            - "9d3b58ee-0a5f-4264-8546-4c89e0b0f412" #history
+            - "ab3a5d8f-2214-40bc-a7d9-6f59eaf9353c" #nature
+            - "cb2c901d-833e-4ed2-89f3-04ebf3a2f201" #sport
+
+  - name: "set_knowledge_geography"
+    repeatable: true
+    activation:
+      trigger: "set_knowledge_geography"
+    actions:
+      - character_changes:
+          enable_common_knowledge:
+            - "4af12475-245d-4fe1-b374-dec1b080b3bd" #geography
+          disable_common_knowledge:
+            - "193f71e3-d2f6-4cf8-9c51-50b93957c8d1" #art
+            - "a0d5a36d-4b60-4dde-9c2d-383c7d7fda27" #entertainment
+            - "9d3b58ee-0a5f-4264-8546-4c89e0b0f412" #history
+            - "ab3a5d8f-2214-40bc-a7d9-6f59eaf9353c" #nature
+            - "cb2c901d-833e-4ed2-89f3-04ebf3a2f201" #sport
+
+  - name: "set_knowledge_history"
+    repeatable: true
+    activation:
+      trigger: "set_knowledge_history"
+    actions:
+      - character_changes:
+          enable_common_knowledge:
+            - "9d3b58ee-0a5f-4264-8546-4c89e0b0f412" #history
+          disable_common_knowledge:
+            - "193f71e3-d2f6-4cf8-9c51-50b93957c8d1" #art
+            - "a0d5a36d-4b60-4dde-9c2d-383c7d7fda27" #entertainment
+            - "4af12475-245d-4fe1-b374-dec1b080b3bd" #geography
+            - "ab3a5d8f-2214-40bc-a7d9-6f59eaf9353c" #nature
+            - "cb2c901d-833e-4ed2-89f3-04ebf3a2f201" #sport
+
+  - name: "set_knowledge_nature"
+    repeatable: true
+    activation:
+      trigger: "set_knowledge_nature"
+    actions:
+      - character_changes:
+          enable_common_knowledge:
+            - "ab3a5d8f-2214-40bc-a7d9-6f59eaf9353c" #nature
+          disable_common_knowledge:
+            - "193f71e3-d2f6-4cf8-9c51-50b93957c8d1" #art
+            - "a0d5a36d-4b60-4dde-9c2d-383c7d7fda27" #entertainment
+            - "4af12475-245d-4fe1-b374-dec1b080b3bd" #geography
+            - "9d3b58ee-0a5f-4264-8546-4c89e0b0f412" #history
+            - "cb2c901d-833e-4ed2-89f3-04ebf3a2f201" #sport
+
+  - name: "set_knowledge_sport"
+    repeatable: true
+    activation:
+      trigger: "set_knowledge_sport"
+    actions:
+      - character_changes:
+          enable_common_knowledge:
+            - "cb2c901d-833e-4ed2-89f3-04ebf3a2f201" #sport
+          disable_common_knowledge:
+            - "193f71e3-d2f6-4cf8-9c51-50b93957c8d1" #art
+            - "a0d5a36d-4b60-4dde-9c2d-383c7d7fda27" #entertainment
+            - "4af12475-245d-4fe1-b374-dec1b080b3bd" #geography
+            - "9d3b58ee-0a5f-4264-8546-4c89e0b0f412" #history
+            - "ab3a5d8f-2214-40bc-a7d9-6f59eaf9353c" #nature
