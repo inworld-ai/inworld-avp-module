@@ -1,4 +1,4 @@
-# InWorld Polyspatial
+# Inworld Polyspatial
 
 Demonstration project showcasing the use of Inworld's Unity SDK with Polyspatial on the Apple Vision Pro
 
